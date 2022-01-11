@@ -1,0 +1,21 @@
+version: '3'
+services:
+  nextjs:
+    build:
+      context: .
+    entrypoint: yarn dev
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+      - /usr/src/app/.next
+    ports:
+      - "3000:3000"
+  cypress:
+    image: "cypress/included:8.3.0"
+    depends_on:
+      - nextjs
+    environment:
+      - CYPRESS_baseUrl=http://nextjs:3000
+    working_dir: /cypress
+    volumes:
+      - ./:/cypress
