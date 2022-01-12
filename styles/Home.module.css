@@ -45,15 +45,30 @@
   font-size: 4rem;
 }
 
-.title,
-.description {
+.subtitle {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 3rem;
+  color: rgba(31,169,113)
+}
+
+.title {
   text-align: center;
 }
 
-.description {
-  margin: 4rem 0;
+.description, .footnote {
+  margin: 2rem 0;
   line-height: 1.5;
+  text-align: left;
+}
+
+.description {
   font-size: 1.5rem;
+}
+
+.footnote {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .code {

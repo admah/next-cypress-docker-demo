@@ -3,15 +3,17 @@ services:
   nextjs:
     build:
       context: .
-    entrypoint: yarn dev
+    container_name: nextjs
+    restart: always
     volumes:
-      - .:/usr/src/app
-      - /usr/src/app/node_modules
-      - /usr/src/app/.next
+      - ./:/app
+      - /app/node_modules
+      - /app/.next
     ports:
-      - "3000:3000"
+      - 3000:3000
   cypress:
     image: "cypress/included:8.3.0"
+    container_name: cypress
     depends_on:
       - nextjs
     environment:
