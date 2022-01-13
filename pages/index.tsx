@@ -30,12 +30,12 @@ const Home: NextPage = () => {
             <ol>
               <li>Create a new image with everything needed to run this Next.js app</li>
               <li>Start the app and serve it at port 3000</li>
-              <li>Create another image - <code className={styles.code}>cypress/included:8.3.0</code></li>
+              <li>Create another image - <code className={styles.code}>cypress/included:9.2.0</code></li>
               <li>Run Cypress tests against the app and exit on completion</li>
             </ol>
           </p>
 
-          <p className={styles.description}>
+          <p className={styles.footnote}>
             Note: If you'd like to develop the app and not run tests run{' '}
             <code className={styles.code}>yarn up:dev</code>
           </p>
