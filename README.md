@@ -37,9 +37,12 @@ Note: This more closely simulates CI, since it exits on completion instead of al
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more, take a look at the following resources:
 
+- [Cypress Documentation](https://on.cypress.io) - learn about Cypress and how it helps you write faster, easier, more reliable tests.
+- [Cypress Docker Documentation](https://on.cypress.io/docker) - learn about Cypress custom images and see examples.
+- [Cypress CI/CD Documentation](https://on.cypress.io/ci) - learn how to use Cypress in your CI/CD processes.
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+You can check out [the cypress-docker-images GitHub repository](https://github.com/cypress-io/cypress-docker-images/) - your feedback and contributions are welcome!
