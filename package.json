@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "up:dev": "docker-compose up --exit-code-from cypress"
+    "up:ci": "docker-compose up --build --exit-code-from cypress",
+    "up:dev": "docker-compose up -d --build"
   },
   "dependencies": {
     "next": "12.0.7",
